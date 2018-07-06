@@ -24,14 +24,18 @@ class Cat
   end
 
   def meow
+    if @name == "Nina"
+      "My name is #{name}, I like to eat #{preferred_food} all the time!"
+    else
     "My name is #{name}, I like to eat #{preferred_food} at #{meal_time} AM"
   end
-
+end
 
 fartbag = Cat.new("fartbag","brocolli",10)
 snowball = Cat.new("snowball","snowballs", 11)
+nina = Cat.new("Nina","fish",23)
 
-p snowball.meow
+p fartbag.meow
 
 
 end
